@@ -6,12 +6,9 @@
   "author": {
     "name": "Jayden Seric",
     "email": "me@jaydenseric.com",
-    "url": "http://jaydenseric.com"
+    "url": "https://jaydenseric.com"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jaydenseric/google-static-maps-styler-query.git"
-  },
+  "repository": "github:jaydenseric/google-static-maps-styler-query",
   "homepage": "https://github.com/jaydenseric/google-static-maps-styler-query#readme",
   "bugs": "https://github.com/jaydenseric/google-static-maps-styler-query/issues",
   "keywords": [
@@ -22,51 +19,45 @@
     "query",
     "string"
   ],
+  "files": [
+    "lib"
+  ],
+  "main": "lib",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=8"
+  },
+  "browserslist": "> 0.5%, not dead, node >= 8",
   "devDependencies": {
-    "babel-eslint": "^7.1.1",
-    "babel-preset-env": "^1.1.8",
-    "rollup": "^0.41.4",
-    "rollup-plugin-babel": "^2.7.1",
-    "rollup-watch": "^3.2.2",
-    "standard": "^9.0.0"
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "eslint-config-env": "^9.0.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-import-order-alphabetical": "^0.0.2",
+    "eslint-plugin-jsdoc": "^15.8.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.2",
+    "jsdoc-md": "^3.1.0",
+    "lint-staged": "^9.2.1",
+    "prettier": "^1.18.2",
+    "size-limit": "^1.3.8"
   },
   "scripts": {
-    "lint": "standard",
-    "prebuild": "npm run lint",
-    "build": "rollup --config",
-    "build:watch": "npm run build -- --watch",
-    "prepublish": "npm run build"
-  },
-  "main": "dist/google-static-maps-styler-query.js",
-  "module": "dist/google-static-maps-styler-query.module.js",
-  "files": [
-    "src",
-    "dist"
-  ],
-  "engines": {
-    "node": ">=6.4"
-  },
-  "babel": {
-    "presets": [
-      [
-        "env",
-        {
-          "targets": {
-            "node": 6.4,
-            "browsers": [
-              "> 2%"
-            ]
-          },
-          "modules": false,
-          "loose": true
-        }
-      ]
-    ]
-  },
-  "standard": {
-    "parser": "babel-eslint",
-    "ignore": [
-      "dist/**"
-    ]
+    "prepare": "npm run prepare:clean && npm run prepare:mjs && npm run prepare:js && npm run prepare:jsdoc && npm run prepare:prettier",
+    "prepare:clean": "rm -rf lib",
+    "prepare:mjs": "BABEL_ESM=1 babel src -d lib --keep-file-extension",
+    "prepare:js": "babel src -d lib",
+    "prepare:jsdoc": "jsdoc-md",
+    "prepare:prettier": "prettier 'lib/**/*.{mjs,js}' readme.md --write",
+    "test": "npm run test:eslint && npm run test:prettier && npm run test:size",
+    "test:eslint": "eslint . --ext mjs,js",
+    "test:prettier": "prettier '**/*.{json,yml,md}' -l",
+    "test:size": "size-limit",
+    "prepublishOnly": "npm test"
   }
 }
