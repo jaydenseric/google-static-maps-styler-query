@@ -2,6 +2,10 @@
 
 ## Next
 
+### Major
+
+- Support Node.js v10+, from v8+. This mostly applies to this project’s development environment.
+
 ### Minor
 
 - Setup [GitHub Sponsors funding](https://github.com/sponsors/jaydenseric):

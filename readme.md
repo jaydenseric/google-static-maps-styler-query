@@ -14,7 +14,7 @@ npm install google-static-maps-styler-query
 
 ## Support
 
-- Node.js v8+
+- Node.js v10+
 - Browsers [`> 0.5%, not dead`](https://browserl.ist/?q=%3E+0.5%25%2C+not+dead)
 
 ## API
