@@ -1,5 +1,11 @@
 # google-static-maps-styler-query changelog
 
+## Next
+
+### Patch
+
+- Stop using [`husky`](https://npm.im/husky) and [`lint-staged`](https://npm.im/lint-staged).
+
 ## 2.0.0
 
 ### Major
