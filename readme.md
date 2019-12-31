@@ -1,6 +1,6 @@
 # google-static-maps-styler-query
 
-[![npm version](https://badgen.net/npm/v/google-static-maps-styler-query)](https://npm.im/google-static-maps-styler-query) [![Build status](https://travis-ci.org/jaydenseric/google-static-maps-styler-query.svg?branch=master)](https://travis-ci.org/jaydenseric/google-static-maps-styler-query)
+[![npm version](https://badgen.net/npm/v/google-static-maps-styler-query)](https://npm.im/google-static-maps-styler-query) [![CI status](https://github.com/jaydenseric/google-static-maps-styler-query/workflows/CI/badge.svg)](https://github.com/jaydenseric/google-static-maps-styler-query/actions)
 
 Converts a [Google Maps styler array](https://developers.google.com/maps/documentation/javascript/style-reference) to a [Google Static Maps styler URL query string](https://developers.google.com/maps/documentation/maps-static/styling).
 
