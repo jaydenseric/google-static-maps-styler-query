@@ -26,6 +26,7 @@
 - Removed the package `sideEffects` field.
 - Removed `package-lock.json` from `.gitignore` and `.prettierignore` as it’s disabled in `.npmrc` anyway.
 - Use GitHub Actions instead of Travis for CI.
+- Tweaked the setup instructions.
 
 ## 2.0.0
 

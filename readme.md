@@ -6,7 +6,7 @@ Converts a [Google Maps styler array](https://developers.google.com/maps/documen
 
 ## Setup
 
-To install [`google-static-maps-styler-query`](https://npm.im/google-static-maps-styler-query) from [npm](https://npmjs.com) run:
+To install from [npm](https://npmjs.com) run:
 
 ```sh
 npm install google-static-maps-styler-query
