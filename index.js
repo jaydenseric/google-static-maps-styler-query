@@ -1,12 +1,12 @@
 'use strict'
 
 /**
- * Converts a [Google Maps styler array](https://developers.google.com/maps/documentation/javascript/style-reference)
- * to a [Google Static Maps styler URL query string](https://developers.google.com/maps/documentation/maps-static/styling).
+ * Converts a Google Maps styler array to a Google Static Maps styler URL query
+ * string.
  * @kind function
  * @name googleStaticMapsStylerQuery
- * @param {Array<object>} styles - Google Maps styler array.
- * @returns {string} Google Static Maps styler URL query string.
+ * @param {Array<object>} styles - [Google Maps styler array](https://developers.google.com/maps/documentation/javascript/style-reference).
+ * @returns {string} [Google Static Maps styler URL query string](https://developers.google.com/maps/documentation/maps-static/styling).
  * @example <caption>A simple conversion.</caption>
  * ```js
  * const googleStaticMapsStylerQuery = require('google-static-maps-styler-query')

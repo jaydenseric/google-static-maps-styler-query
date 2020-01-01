@@ -27,6 +27,7 @@
 - Removed `package-lock.json` from `.gitignore` and `.prettierignore` as it’s disabled in `.npmrc` anyway.
 - Use GitHub Actions instead of Travis for CI.
 - Tweaked the setup instructions.
+- Tweaked the JSDoc.
 
 ## 2.0.0
 
