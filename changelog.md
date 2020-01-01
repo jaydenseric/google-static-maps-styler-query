@@ -5,6 +5,9 @@
 ### Major
 
 - Support Node.js v10+, from v8+. This mostly applies to this project’s development environment.
+- The published files have been reorganized.
+- The package now exports a single default export, instead of a named export.
+- ESM is no longer published.
 
 ### Minor
 
@@ -15,9 +18,11 @@
 ### Patch
 
 - Updated dev dependencies.
+- Setup [`eslint-plugin-compat`](https://npm.im/eslint-plugin-compat).
 - Replaced the [`size-limit`](https://npm.im/size-limit) dev dependency with [`@size-limit/preset-small-lib`](https://npm.im/@size-limit/preset-small-lib).
 - Removed the now redundant [`eslint-plugin-import-order-alphabetical`](https://npm.im/eslint-plugin-import-order-alphabetical) dev dependency.
 - Stop using [`husky`](https://npm.im/husky) and [`lint-staged`](https://npm.im/lint-staged).
+- Refactored source to CJS, removed the build scripts and Babel related tooling.
 - Removed `package-lock.json` from `.gitignore` and `.prettierignore` as it’s disabled in `.npmrc` anyway.
 - Use GitHub Actions instead of Travis for CI.
 

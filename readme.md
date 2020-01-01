@@ -35,21 +35,11 @@ Converts a [Google Maps styler array](https://developers.google.com/maps/documen
 
 #### Examples
 
-_Import using ESM._
-
-> ```js
-> import { googleStaticMapsStylerQuery } from 'google-static-maps-styler-query'
-> ```
-
-_Import using CJS._
-
-> ```js
-> const { googleStaticMapsStylerQuery } require('google-static-maps-styler-query')
-> ```
-
 _A simple conversion._
 
 > ```js
+> const googleStaticMapsStylerQuery = require('google-static-maps-styler-query')
+>
 > const stylerArray = [
 >   {
 >     stylers: [
