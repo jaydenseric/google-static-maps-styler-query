@@ -24,7 +24,6 @@
     "index.js"
   ],
   "main": "index.js",
-  "sideEffects": false,
   "engines": {
     "node": ">=10"
   },
