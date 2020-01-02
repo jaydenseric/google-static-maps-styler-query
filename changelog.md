@@ -28,6 +28,7 @@
 - Removed `package-lock.json` from `.gitignore` and `.prettierignore` as it’s disabled in `.npmrc` anyway.
 - Use GitHub Actions instead of Travis for CI.
 - Tweaked the setup instructions.
+- Clarified that Opera Mini isn’t supported in the Browserslist queries and readme “Support” section.
 - Tweaked the JSDoc and simplified the example.
 
 ## 2.0.0
