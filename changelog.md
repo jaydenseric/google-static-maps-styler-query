@@ -22,6 +22,7 @@
 - Replaced the [`size-limit`](https://npm.im/size-limit) dev dependency with [`@size-limit/preset-small-lib`](https://npm.im/@size-limit/preset-small-lib).
 - Removed the now redundant [`eslint-plugin-import-order-alphabetical`](https://npm.im/eslint-plugin-import-order-alphabetical) dev dependency.
 - Stop using [`husky`](https://npm.im/husky) and [`lint-staged`](https://npm.im/lint-staged).
+- Added tests using new [`test-director`](https://npm.im/test-director), [`coverage-node`](https://npm.im/coverage-node) and [`hard-rejection`](https://npm.im/hard-rejection) dev dependencies.
 - Refactored source to CJS, removed the build scripts and Babel related tooling.
 - Removed the package `sideEffects` field.
 - Removed `package-lock.json` from `.gitignore` and `.prettierignore` as it’s disabled in `.npmrc` anyway.

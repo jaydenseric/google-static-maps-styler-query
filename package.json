@@ -30,6 +30,7 @@
   "browserslist": "> 0.5%, not dead",
   "devDependencies": {
     "@size-limit/preset-small-lib": "^2.2.4",
+    "coverage-node": "^2.0.2",
     "eslint": "^6.8.0",
     "eslint-config-env": "^13.0.1",
     "eslint-config-prettier": "^6.9.0",
@@ -38,16 +39,19 @@
     "eslint-plugin-jsdoc": "^19.0.1",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-prettier": "^3.1.2",
+    "hard-rejection": "^2.1.0",
     "jsdoc-md": "^4.0.1",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "test-director": "^3.0.0"
   },
   "scripts": {
     "prepare": "npm run prepare:jsdoc && npm run prepare:prettier",
     "prepare:jsdoc": "jsdoc-md",
     "prepare:prettier": "prettier readme.md --write",
-    "test": "npm run test:eslint && npm run test:prettier && npm run test:size",
+    "test": "npm run test:eslint && npm run test:prettier && npm run test:api && npm run test:size",
     "test:eslint": "eslint .",
     "test:prettier": "prettier '**/*.{json,yml,md}' -l",
+    "test:api": "coverage-node -r hard-rejection/register test",
     "test:size": "size-limit",
     "prepublishOnly": "npm test"
   }
