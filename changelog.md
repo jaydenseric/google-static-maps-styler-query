@@ -1,5 +1,11 @@
 # google-static-maps-styler-query changelog
 
+## Next
+
+### Patch
+
+- Ensure GitHub Actions run on pull request.
+
 ## 3.0.0
 
 ### Major
