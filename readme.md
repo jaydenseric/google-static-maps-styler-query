@@ -38,9 +38,9 @@ Converts a Google Maps styler array to a Google Static Maps styler URL query str
 _How to create a styled static map URL._
 
 > ```js
-> const googleStaticMapsStylerQuery = require('google-static-maps-styler-query')
+> const googleStaticMapsStylerQuery = require('google-static-maps-styler-query');
 >
-> const styles = [{ elementType: 'labels', stylers: [{ visibility: 'off' }] }]
-> const stylerQuery = googleStaticMapsStylerQuery(styles)
-> const googleStaticMapSrc = `https://maps.googleapis.com/maps/api/staticmap?center=Australia&size=250x200${stylerQuery}`
+> const styles = [{ elementType: 'labels', stylers: [{ visibility: 'off' }] }];
+> const stylerQuery = googleStaticMapsStylerQuery(styles);
+> const googleStaticMapSrc = `https://maps.googleapis.com/maps/api/staticmap?center=Australia&size=250x200${stylerQuery}`;
 > ```
