@@ -2,6 +2,10 @@
 
 ## Next
 
+### Major
+
+- Updated Node.js support to `^10.13.0 || ^12.0.0 || >= 13.7`.
+
 ### Patch
 
 - Ensure GitHub Actions run on pull request.
