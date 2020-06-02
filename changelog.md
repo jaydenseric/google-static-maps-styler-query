@@ -5,6 +5,7 @@
 ### Major
 
 - Updated Node.js support to `^10.13.0 || ^12.0.0 || >= 13.7`.
+- Updated dev dependencies, some of which require newer Node.js versions than were previously supported.
 
 ### Patch
 
