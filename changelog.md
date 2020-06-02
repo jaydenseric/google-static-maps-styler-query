@@ -9,6 +9,7 @@
 ### Patch
 
 - Ensure GitHub Actions run on pull request.
+- Also run GitHub Actions in Node.js v14 and drop v13.
 
 ## 3.0.0
 
