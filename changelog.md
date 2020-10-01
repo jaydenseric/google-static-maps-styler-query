@@ -1,5 +1,12 @@
 # google-static-maps-styler-query changelog
 
+## Next
+
+### Patch
+
+- Updated dev dependencies.
+- JSDoc description fix.
+
 ## 4.0.0
 
 ### Major

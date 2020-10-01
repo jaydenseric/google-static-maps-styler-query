@@ -5,7 +5,7 @@
  * string.
  * @kind function
  * @name googleStaticMapsStylerQuery
- * @param {Array<object>} styles - [Google Maps styler array](https://developers.google.com/maps/documentation/javascript/style-reference).
+ * @param {Array<object>} styles [Google Maps styler array](https://developers.google.com/maps/documentation/javascript/style-reference).
  * @returns {string} [Google Static Maps styler URL query string](https://developers.google.com/maps/documentation/maps-static/styling).
  * @example <caption>How to create a styled static map URL.</caption>
  * ```js
