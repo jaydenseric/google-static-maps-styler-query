@@ -25,22 +25,23 @@
  * ```
  */
 module.exports = function googleStaticMapsStylerQuery(styles) {
-  var query = '';
+  let query = '';
 
-  styles.forEach((style) => {
-    var component = [];
+  for (const style of styles) {
+    const component = [];
 
     if (style.featureType) component.push('feature:' + style.featureType);
     if (style.elementType) component.push('element:' + style.elementType);
 
-    style.stylers.forEach((rule) => {
-      var name = Object.keys(rule)[0];
-      var value = rule[name].toString().replace('#', '0x');
-      component.push(name + ':' + value);
-    });
+    for (const rule of style.stylers) {
+      const [name] = Object.keys(rule);
+      const value = rule[name].toString().replace('#', '0x');
+
+      component.push(`${name}:${value}`);
+    }
 
     query += '&style=' + encodeURIComponent(component.join('|'));
-  });
+  }
 
   return query;
 };
