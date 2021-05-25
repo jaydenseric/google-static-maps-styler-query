@@ -39,7 +39,6 @@
     "eslint-plugin-jsdoc": "^30.6.2",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "hard-rejection": "^2.1.0",
     "jsdoc-md": "^7.0.0",
     "prettier": "^2.1.2",
     "size-limit": "^4.6.0",
@@ -52,7 +51,7 @@
     "test": "npm run test:eslint && npm run test:prettier && npm run test:api && npm run test:size",
     "test:eslint": "eslint .",
     "test:prettier": "prettier -c .",
-    "test:api": "coverage-node -r hard-rejection/register test",
+    "test:api": "coverage-node test",
     "test:size": "size-limit",
     "prepublishOnly": "npm test"
   }
