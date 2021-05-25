@@ -11,6 +11,8 @@
 
 ### Patch
 
+- Simplified JSDoc related package scripts now that [`jsdoc-md`](https://npm.im/jsdoc-md) v10+ automatically generates a Prettier formatted readme.
+- Added a package `test:jsdoc` script that checks the readme API docs are up to date with the source JSDoc.
 - Stop using [`hard-rejection`](https://npm.im/hard-rejection) to detect unhandled `Promise` rejections in tests, as Node.js v15+ does this natively.
 - Updated GitHub Actions CI config:
   - Run tests with Node.js v12, v14, v16.
