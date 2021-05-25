@@ -51,7 +51,7 @@
     "test": "npm run test:eslint && npm run test:prettier && npm run test:api && npm run test:size",
     "test:eslint": "eslint .",
     "test:prettier": "prettier -c .",
-    "test:api": "coverage-node test.mjs",
+    "test:api": "coverage-node test/index.mjs",
     "test:size": "size-limit",
     "prepublishOnly": "npm test"
   }
