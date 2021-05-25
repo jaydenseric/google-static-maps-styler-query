@@ -1,6 +1,6 @@
 {
   "name": "google-static-maps-styler-query",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "Converts a Google Maps styler array to a Google Static Maps styler URL query string.",
   "license": "MIT",
   "author": {

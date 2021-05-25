@@ -1,6 +1,6 @@
 # google-static-maps-styler-query changelog
 
-## Next
+## 5.0.0
 
 ### Major
 
