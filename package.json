@@ -23,6 +23,7 @@
   "files": [
     "index.js"
   ],
+  "sideEffects": false,
   "main": "index.js",
   "exports": {
     ".": "./index.js",

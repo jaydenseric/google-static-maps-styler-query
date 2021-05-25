@@ -8,6 +8,7 @@
 - Stopped supporting Internet Explorer.
 - Updated dev dependencies, some of which require newer Node.js versions than were previously supported.
 - Added a package `exports` field.
+- Added a package `sideEffects` field.
 - The tests are now ESM in `.mjs` files instead of CJS in a `.js` file.
 
 ### Patch
