@@ -19,17 +19,13 @@ npm install google-static-maps-styler-query
 
 ## API
 
-### Table of contents
-
-- [function googleStaticMapsStylerQuery](#function-googlestaticmapsstylerquery)
-
 ### function googleStaticMapsStylerQuery
 
 Converts a Google Maps styler array to a Google Static Maps styler URL query string.
 
 | Parameter | Type | Description |
 | :-- | :-- | :-- |
-| `styles` | Array&lt;object> | [Google Maps styler array](https://developers.google.com/maps/documentation/javascript/style-reference). |
+| `styles` | Array<object> | [Google Maps styler array](https://developers.google.com/maps/documentation/javascript/style-reference). |
 
 **Returns:** string — [Google Static Maps styler URL query string](https://developers.google.com/maps/documentation/maps-static/styling).
 

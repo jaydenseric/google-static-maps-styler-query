@@ -1,8 +1,6 @@
-'use strict';
-
-const { strictEqual } = require('assert');
-const { TestDirector } = require('test-director');
-const googleStaticMapsStyleQuery = require('.');
+import { strictEqual } from 'assert';
+import TestDirector from 'test-director';
+import googleStaticMapsStyleQuery from './index.js';
 
 const tests = new TestDirector();
 

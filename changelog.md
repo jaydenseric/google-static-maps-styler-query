@@ -6,10 +6,11 @@
 
 - Updated Node.js support to `^12.20 || >= 14.13`.
 - Stopped supporting Internet Explorer.
+- Updated dev dependencies, some of which require newer Node.js versions than were previously supported.
+- The tests are now ESM in a `.mjs` file instead of CJS in a `.js` file.
 
 ### Patch
 
-- Updated dev dependencies.
 - Stop using [`hard-rejection`](https://npm.im/hard-rejection) to detect unhandled `Promise` rejections in tests, as Node.js v15+ does this natively.
 - Updated GitHub Actions CI config:
   - Run tests with Node.js v12, v14, v16.

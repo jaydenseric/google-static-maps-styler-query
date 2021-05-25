@@ -29,20 +29,20 @@
   },
   "browserslist": "Node 12.20 - 13 and Node < 13, Node >= 14.13, > 0.5%, not OperaMini all, not IE > 0, not dead",
   "devDependencies": {
-    "@size-limit/preset-small-lib": "^4.6.0",
-    "coverage-node": "^3.0.0",
-    "eslint": "^7.10.0",
-    "eslint-config-env": "^15.0.1",
-    "eslint-config-prettier": "^6.12.0",
-    "eslint-plugin-compat": "^3.8.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsdoc": "^30.6.2",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "jsdoc-md": "^7.0.0",
-    "prettier": "^2.1.2",
-    "size-limit": "^4.6.0",
-    "test-director": "^4.0.1"
+    "@size-limit/preset-small-lib": "^4.11.0",
+    "coverage-node": "^5.0.1",
+    "eslint": "^7.27.0",
+    "eslint-config-env": "^20.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-compat": "^3.9.0",
+    "eslint-plugin-import": "^2.23.3",
+    "eslint-plugin-jsdoc": "^35.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "jsdoc-md": "^11.0.0",
+    "prettier": "^2.3.0",
+    "size-limit": "^4.11.0",
+    "test-director": "^6.0.0"
   },
   "scripts": {
     "prepare": "npm run prepare:jsdoc && npm run prepare:prettier",
@@ -51,7 +51,7 @@
     "test": "npm run test:eslint && npm run test:prettier && npm run test:api && npm run test:size",
     "test:eslint": "eslint .",
     "test:prettier": "prettier -c .",
-    "test:api": "coverage-node test",
+    "test:api": "coverage-node test.mjs",
     "test:size": "size-limit",
     "prepublishOnly": "npm test"
   }
