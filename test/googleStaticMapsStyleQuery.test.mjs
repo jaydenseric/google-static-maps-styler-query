@@ -1,11 +1,14 @@
 import { strictEqual } from "assert";
 
-import googleStaticMapsStyleQuery from "../index.js";
+import googleStaticMapsStyleQuery from "../googleStaticMapsStylerQuery.mjs";
 import assertBundleSize from "./assertBundleSize.mjs";
 
 export default (tests) => {
   tests.add("`googleStaticMapsStyleQuery` bundle size.", async () => {
-    await assertBundleSize(new URL("../index.js", import.meta.url), 250);
+    await assertBundleSize(
+      new URL("../googleStaticMapsStylerQuery.mjs", import.meta.url),
+      250
+    );
   });
 
   tests.add(

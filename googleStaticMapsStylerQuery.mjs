@@ -1,5 +1,3 @@
-"use strict";
-
 /**
  * Converts a
  * [Google Maps styler array](https://developers.google.com/maps/documentation/javascript/style-reference)
@@ -13,10 +11,6 @@
  * ```js
  * import googleStaticMapsStylerQuery from "google-static-maps-styler-query";
  * ```
- * @example <caption>How to `require`.</caption>
- * ```js
- * const googleStaticMapsStylerQuery = require("google-static-maps-styler-query");
- * ```
  * @example <caption>How to create a styled static map URL.</caption>
  * ```js
  * const styles = [{ elementType: "labels", stylers: [{ visibility: "off" }] }];
@@ -24,7 +18,7 @@
  * const googleStaticMapSrc = `https://maps.googleapis.com/maps/api/staticmap?center=Australia&size=250x200${stylerQuery}`;
  * ```
  */
-module.exports = function googleStaticMapsStylerQuery(styles) {
+export default function googleStaticMapsStylerQuery(styles) {
   let query = "";
 
   for (const style of styles) {
@@ -44,4 +38,4 @@ module.exports = function googleStaticMapsStylerQuery(styles) {
   }
 
   return query;
-};
+}

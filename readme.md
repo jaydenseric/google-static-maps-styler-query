@@ -37,12 +37,6 @@ _How to `import`._
 > import googleStaticMapsStylerQuery from "google-static-maps-styler-query";
 > ```
 
-_How to `require`._
-
-> ```js
-> const googleStaticMapsStylerQuery = require("google-static-maps-styler-query");
-> ```
-
 _How to create a styled static map URL._
 
 > ```js

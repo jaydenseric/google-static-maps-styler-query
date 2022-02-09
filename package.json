@@ -21,12 +21,12 @@
     "string"
   ],
   "files": [
-    "index.js"
+    "googleStaticMapsStylerQuery.mjs"
   ],
   "sideEffects": false,
-  "main": "./index.js",
+  "main": "./googleStaticMapsStylerQuery.mjs",
   "exports": {
-    ".": "./index.js",
+    ".": "./googleStaticMapsStylerQuery.mjs",
     "./package.json": "./package.json"
   },
   "engines": {
