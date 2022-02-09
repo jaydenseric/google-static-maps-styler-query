@@ -25,7 +25,7 @@ Converts a [Google Maps styler array](https://developers.google.com/maps/documen
 
 | Parameter | Type | Description |
 | :-- | :-- | :-- |
-| `styles` | Array<object> | [Google Maps styler array](https://developers.google.com/maps/documentation/javascript/style-reference). |
+| `styles` | Array\<object> | [Google Maps styler array](https://developers.google.com/maps/documentation/javascript/style-reference). |
 
 **Returns:** string — [Google Static Maps styler URL query string](https://developers.google.com/maps/documentation/maps-static/styling).
 
