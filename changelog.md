@@ -6,6 +6,10 @@
 
 - Updated Node.js support to `^12.22.0 || ^14.17.0 || >= 16.0.0`.
 
+### Patch
+
+- Also run GitHub Actions CI with Node.js v17.
+
 ## 5.0.0
 
 ### Major
