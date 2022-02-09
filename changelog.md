@@ -11,6 +11,7 @@
 ### Patch
 
 - Also run GitHub Actions CI with Node.js v17.
+- Simplified package scripts.
 - Simplified dev dependencies and config for ESLint.
 - Test the bundle sizes for public modules individually.
 - Use a new `assertBundleSize` function to assert module bundle size in tests:
