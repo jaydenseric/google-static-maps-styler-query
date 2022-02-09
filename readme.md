@@ -34,19 +34,19 @@ Converts a [Google Maps styler array](https://developers.google.com/maps/documen
 _How to `import`._
 
 > ```js
-> import googleStaticMapsStylerQuery from 'google-static-maps-styler-query';
+> import googleStaticMapsStylerQuery from "google-static-maps-styler-query";
 > ```
 
 _How to `require`._
 
 > ```js
-> const googleStaticMapsStylerQuery = require('google-static-maps-styler-query');
+> const googleStaticMapsStylerQuery = require("google-static-maps-styler-query");
 > ```
 
 _How to create a styled static map URL._
 
 > ```js
-> const styles = [{ elementType: 'labels', stylers: [{ visibility: 'off' }] }];
+> const styles = [{ elementType: "labels", stylers: [{ visibility: "off" }] }];
 > const stylerQuery = googleStaticMapsStylerQuery(styles);
 > const googleStaticMapSrc = `https://maps.googleapis.com/maps/api/staticmap?center=Australia&size=250x200${stylerQuery}`;
 > ```

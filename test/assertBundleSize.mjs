@@ -1,7 +1,7 @@
-import { fail } from 'assert';
-import esbuild from 'esbuild';
-import { gzipSize } from 'gzip-size';
-import { fileURLToPath } from 'url';
+import { fail } from "assert";
+import esbuild from "esbuild";
+import { gzipSize } from "gzip-size";
+import { fileURLToPath } from "url";
 
 /**
  * Asserts the minified and gzipped bundle size of a module.
@@ -13,10 +13,10 @@ import { fileURLToPath } from 'url';
  */
 export default async function assertBundleSize(moduleUrl, limit) {
   if (!(moduleUrl instanceof URL))
-    throw new TypeError('Argument 1 `moduleUrl` must be a `URL` instance.');
+    throw new TypeError("Argument 1 `moduleUrl` must be a `URL` instance.");
 
-  if (typeof limit !== 'number')
-    throw new TypeError('Argument 2 `limit` must be a number.');
+  if (typeof limit !== "number")
+    throw new TypeError("Argument 2 `limit` must be a number.");
 
   const {
     outputFiles: [bundle],
@@ -25,8 +25,8 @@ export default async function assertBundleSize(moduleUrl, limit) {
     write: false,
     bundle: true,
     minify: true,
-    legalComments: 'none',
-    format: 'cjs',
+    legalComments: "none",
+    format: "cjs",
   });
 
   const gzippedSize = await gzipSize(bundle.text);
