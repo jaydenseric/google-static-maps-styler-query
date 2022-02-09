@@ -1,4 +1,5 @@
 import { strictEqual } from 'assert';
+
 import googleStaticMapsStyleQuery from '../index.js';
 
 export default (tests) => {
