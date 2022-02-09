@@ -1,5 +1,11 @@
 # google-static-maps-styler-query changelog
 
+## Next
+
+### Major
+
+- Updated Node.js support to `^12.22.0 || ^14.17.0 || >= 16.0.0`.
+
 ## 5.0.0
 
 ### Major
