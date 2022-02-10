@@ -21,6 +21,7 @@
 - Simplified dev dependencies and config for ESLint.
 - Check TypeScript types via a new package `types` script.
 - Removed the [`jsdoc-md`](https://npm.im/jsdoc-md) dev dependency and the related package scripts, replacing the readme “API” section with manually written “Examples” and “Exports” sections.
+- Reorganized the test file structure.
 - Test the bundle sizes for public modules individually.
 - Use a new `assertBundleSize` function to assert module bundle size in tests:
   - Failure message contains details about the bundle size and how much the limit was exceeded.
