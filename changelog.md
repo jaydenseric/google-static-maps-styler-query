@@ -25,6 +25,7 @@
   - Resolves the minified bundle and its gzipped size for debugging in tests.
 - More reliable string coercion within the `googleStaticMapsStylerQuery` function.
 - Configured Prettier option `singleQuote` to the default, `false`.
+- Improved documentation.
 
 ## 5.0.0
 

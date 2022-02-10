@@ -4,7 +4,7 @@
 
 Converts a [Google Maps styler array](https://developers.google.com/maps/documentation/javascript/style-reference) to a [Google Static Maps styler URL query string](https://developers.google.com/maps/documentation/maps-static/styling).
 
-## Setup
+## Installation
 
 To install with [npm](https://npmjs.com/get-npm), run:
 
@@ -12,7 +12,7 @@ To install with [npm](https://npmjs.com/get-npm), run:
 npm install google-static-maps-styler-query
 ```
 
-## Support
+## Requirements
 
 - [Node.js](https://nodejs.org): `^12.22.0 || ^14.17.0 || >= 16.0.0`
 - [Browsers](https://npm.im/browserslist): `> 0.5%, not OperaMini all, not IE > 0, not dead`
