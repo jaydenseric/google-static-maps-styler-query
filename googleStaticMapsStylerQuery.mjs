@@ -29,7 +29,7 @@ export default function googleStaticMapsStylerQuery(styles) {
 
     for (const rule of style.stylers) {
       const [name] = Object.keys(rule);
-      const value = rule[name].toString().replace("#", "0x");
+      const value = String(rule[name]).replace("#", "0x");
 
       component.push(`${name}:${value}`);
     }
