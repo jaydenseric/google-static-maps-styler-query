@@ -1,8 +1,14 @@
+// @ts-check
+
 import { strictEqual } from "assert";
 
 import googleStaticMapsStyleQuery from "../googleStaticMapsStylerQuery.mjs";
 import assertBundleSize from "./assertBundleSize.mjs";
 
+/**
+ * Adds `googleStaticMapsStyleQuery` tests.
+ * @param {import("test-director").default} tests Test director.
+ */
 export default (tests) => {
   tests.add("`googleStaticMapsStyleQuery` bundle size.", async () => {
     await assertBundleSize(

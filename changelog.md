@@ -8,6 +8,7 @@
 - Updated dev dependencies, some of which require newer Node.js versions than previously supported.
 - Removed `./package` from the package `exports` field; the full `package.json` filename must be used in a `require` path.
 - The API is now ESM in `.mjs` files instead of CJS in `.js` files, [accessible via `import` but not `require`](https://nodejs.org/dist/latest/docs/api/esm.html#require).
+- Implemented TypeScript types via JSDoc comments.
 
 ### Minor
 
@@ -18,6 +19,8 @@
 - Also run GitHub Actions CI with Node.js v17.
 - Simplified package scripts.
 - Simplified dev dependencies and config for ESLint.
+- Check TypeScript types via a new package `types` script.
+- Removed the [`jsdoc-md`](https://npm.im/jsdoc-md) dev dependency and the related package scripts, replacing the readme “API” section with manually written “Examples” and “Exports” sections.
 - Test the bundle sizes for public modules individually.
 - Use a new `assertBundleSize` function to assert module bundle size in tests:
   - Failure message contains details about the bundle size and how much the limit was exceeded.

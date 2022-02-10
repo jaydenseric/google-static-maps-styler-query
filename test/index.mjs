@@ -1,3 +1,5 @@
+// @ts-check
+
 import TestDirector from "test-director";
 
 import testGoogleStaticMapsStyleQuery from "./googleStaticMapsStyleQuery.test.mjs";
