@@ -1,5 +1,12 @@
 # google-static-maps-styler-query changelog
 
+## Next
+
+### Patch
+
+- Updated dev dependencies.
+- Updated the TypeScript config.
+
 ## 6.0.0
 
 ### Major
