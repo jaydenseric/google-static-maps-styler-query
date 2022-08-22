@@ -9,7 +9,9 @@
 
 ### Patch
 
-- Updated the TypeScript config.
+- Updated `jsconfig.json`:
+  - Set `compilerOptions.maxNodeModuleJsDepth` to `10`.
+  - Set `compilerOptions.module` to `nodenext`.
 - Updated GitHub Actions CI config:
   - Run tests with Node.js v14, v16, v18.
   - Updated `actions/checkout` to v3.
