@@ -24,7 +24,6 @@
     "googleStaticMapsStylerQuery.mjs"
   ],
   "sideEffects": false,
-  "main": "./googleStaticMapsStylerQuery.mjs",
   "exports": {
     ".": "./googleStaticMapsStylerQuery.mjs",
     "./googleStaticMapsStylerQuery.mjs": "./googleStaticMapsStylerQuery.mjs",
