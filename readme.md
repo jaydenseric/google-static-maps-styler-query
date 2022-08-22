@@ -26,7 +26,7 @@ const googleStaticMapSrc = `https://maps.googleapis.com/maps/api/staticmap?cente
 
 ## Requirements
 
-- [Node.js](https://nodejs.org): `^12.22.0 || ^14.17.0 || >= 16.0.0`
+- [Node.js](https://nodejs.org): `^14.17.0 || ^16.0.0 || >= 18.0.0`
 - [Browsers](https://npm.im/browserslist): `> 0.5%, not OperaMini all, not IE > 0, not dead`
 
 ## Exports
