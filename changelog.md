@@ -5,10 +5,10 @@
 ### Major
 
 - Updated Node.js support to `^14.17.0 || ^16.0.0 || >= 18.0.0`.
+- Updated dev dependencies, some of which require newer Node.js versions than previously supported.
 
 ### Patch
 
-- Updated dev dependencies.
 - Updated the TypeScript config.
 - Updated GitHub Actions CI config:
   - Run tests with Node.js v14, v16, v18.

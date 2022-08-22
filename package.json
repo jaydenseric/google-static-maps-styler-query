@@ -38,14 +38,14 @@
     "@types/google.maps": "^3.47.4"
   },
   "devDependencies": {
-    "@types/node": "^18.0.1",
-    "coverage-node": "^6.1.0",
-    "esbuild": "^0.14.48",
-    "eslint": "^8.19.0",
+    "@types/node": "^18.7.9",
+    "coverage-node": "^8.0.0",
+    "esbuild": "^0.15.5",
+    "eslint": "^8.22.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "gzip-size": "^7.0.0",
     "prettier": "^2.7.1",
-    "test-director": "^8.0.2",
+    "test-director": "^10.0.0",
     "typescript": "^4.7.4"
   },
   "scripts": {
